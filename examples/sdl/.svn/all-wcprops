@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/parrot/!svn/ver/44128/trunk/examples/sdl
+END
+anim_image.pir
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/parrot/!svn/ver/44128/trunk/examples/sdl/anim_image.pir
+END
+parrot_small.png
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/parrot/!svn/ver/37201/trunk/examples/sdl/parrot_small.png
+END
+blue_font.pir
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/parrot/!svn/ver/38115/trunk/examples/sdl/blue_font.pir
+END
+move_parrot_logo.pir
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/parrot/!svn/ver/44128/trunk/examples/sdl/move_parrot_logo.pir
+END
+raw_pixels.pir
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/parrot/!svn/ver/38115/trunk/examples/sdl/raw_pixels.pir
+END
+mandel.pir
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/parrot/!svn/ver/43141/trunk/examples/sdl/mandel.pir
+END
+bounce_parrot_logo.pir
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/parrot/!svn/ver/44128/trunk/examples/sdl/bounce_parrot_logo.pir
+END
+anim_image_dblbuf.pir
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/parrot/!svn/ver/38115/trunk/examples/sdl/anim_image_dblbuf.pir
+END
+blue_rect.pir
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/parrot/!svn/ver/38115/trunk/examples/sdl/blue_rect.pir
+END
+blue_rect.pl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/parrot/!svn/ver/36833/trunk/examples/sdl/blue_rect.pl
+END

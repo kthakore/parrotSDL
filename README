@@ -1,0 +1,22 @@
+=pod
+
+=head1 PARROTSDL
+
+ An attempt at bringing SDL and related libraries to Parrot in seperate modules
+
+=head2 USAGE:
+
+Don't use this.
+
+=head2 CREDITS:
+
+All credits go to the Parrot Devs. 
+
+=head2 COPYRIGHT:
+
+Parrot
+
+=cut
+
+
+

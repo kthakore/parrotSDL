@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/parrot/!svn/ver/40557/trunk/examples/sdl/tetris
+END
+board.pir
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/parrot/!svn/ver/40557/trunk/examples/sdl/tetris/board.pir
+END
+block.pir
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/parrot/!svn/ver/38115/trunk/examples/sdl/tetris/block.pir
+END
+tetris.pir
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/parrot/!svn/ver/38115/trunk/examples/sdl/tetris/tetris.pir
+END
+blocks.pir
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/parrot/!svn/ver/38115/trunk/examples/sdl/tetris/blocks.pir
+END
+eventhandler.pir
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/parrot/!svn/ver/38115/trunk/examples/sdl/tetris/eventhandler.pir
+END
+app.pir
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/parrot/!svn/ver/38115/trunk/examples/sdl/tetris/app.pir
+END
+boarddata.pir
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/parrot/!svn/ver/38115/trunk/examples/sdl/tetris/boarddata.pir
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/parrot/!svn/ver/37201/trunk/examples/sdl/tetris/README
+END
+blockdata.pir
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/parrot/!svn/ver/38115/trunk/examples/sdl/tetris/blockdata.pir
+END
