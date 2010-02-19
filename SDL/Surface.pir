@@ -34,6 +34,8 @@ All SDL::Surface objects have the following methods:
 
 .namespace [ 'SDL::Surface' ]
 
+.include 'datatypes.pasm'
+
 .sub _initialize :load
     .local pmc class
     class = get_class 'SDL::Surface'
