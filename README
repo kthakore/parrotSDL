@@ -1,22 +1,11 @@
-=pod
+NAME
+    setup.pir - Python distutils style
 
-=head1 PARROTSDL
+DESCRIPTION
+    No Configure step, no Makefile generated.
 
- An attempt at bringing SDL and related libraries to Parrot in seperate modules
-
-=head2 USAGE:
-
-Don't use this.
-
-=head2 CREDITS:
-
-All credits go to the Parrot Devs. 
-
-=head2 COPYRIGHT:
-
-Parrot
-
-=cut
-
-
+USAGE
+        $ parrot setup.pir build
+        $ parrot setup.pir test
+        $ sudo parrot setup.pir install
 
