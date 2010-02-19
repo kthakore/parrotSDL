@@ -42,6 +42,7 @@ No Configure step, no Makefile generated.
     # build
     $P1 = new 'Hash'
     $P1['SDL.pbc'] = 'SDL.pir'
+    $P1['SDL/Rect.pbc'] = 'SDL/Rect.pir'
     $P0['pbc_pir'] = $P1
 
     # test
