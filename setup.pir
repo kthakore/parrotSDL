@@ -44,6 +44,7 @@ No Configure step, no Makefile generated.
     $P1['SDL.pbc'] = 'SDL.pir'
     $P1['SDL/Rect.pbc'] = 'SDL/Rect.pir'
     $P1['SDL/Surface.pbc'] = 'SDL/Surface.pir'
+    $P1['SDL/Color.pbc'] = 'SDL/Color.pir'
     $P0['pbc_pir'] = $P1
 
     # test

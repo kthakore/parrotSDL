@@ -13,7 +13,7 @@ t/sdl_lib.t - test parrot to external SDL connection
 
 =cut
 
-.const int TESTS = 3 
+.const int TESTS = 4 
 
 .sub 'main' :main
     .include 'test_more.pir'
@@ -28,6 +28,9 @@ t/sdl_lib.t - test parrot to external SDL connection
 
     load_bytecode 'SDL/Surface.pbc'
     'ok'(1, 'loaded SDL/Surface')
+
+    load_bytecode 'SDL/Color.pbc'
+    'ok'(1, 'loaded SDL/Color')
 
 
 .end
