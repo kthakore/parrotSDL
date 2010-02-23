@@ -71,13 +71,11 @@ The stopwatch will be drawn onto the specified screen.
     $P0 = 0.1
     setattribute self, 'precision', $P0
 
-    inc $I0
     $P0 = new 'Float'
     $P0 = 0
-    setattribute self, $I0, $P0
+    setattribute self, 'start', $P0
 
-    inc $I0
-    setattribute self, $I0, screen
+    setattribute self, 'screen', screen
 
     self.'_digits'( 10 )
     self = "000:00:00"
@@ -125,7 +123,7 @@ Starts the stopwatch.
     time $N0
     start = $N0
 
-    $P0 = find_global "SDL::StopWatch::Timer", "addWatch"
+    $P0 =  find_global ("SDL::StopWatch::Timer", "addWatch" )
     $P0( self )
 END:
 .end
@@ -153,15 +151,15 @@ Stops the stopwatch.
     $N0   = $N0 - $N1
 
     $N1   = total
-    $N0 + = $N1
+    $N0  += $N1
 
     $N1   = precision
-    $N0 / = $N1
+    $N0  /= $N1
 
     total = $N0
     start = 0
 
-    $P0   = find_global "SDL::StopWatch::Timer", "removeWatch"
+    $P0   = find_global ( "SDL::StopWatch::Timer", "removeWatch" )
     $P0( self )
 END:
 .end
@@ -192,10 +190,10 @@ reciprocal of the precision value.
     $N0   = $N0 - $N1
 
     $N1   = total
-    $N0 + = $N1
+    $N0  += $N1
 
     $N1   = precision
-    $N0 / = $N1
+    $N0  /= $N1
     ret   = $N0
 
 END:
@@ -244,7 +242,7 @@ It is drawn onto the screen consigned to the constructor.
 
     .local pmc screen
     screen = getattribute self, 'screen'
-    $P0    = find_global "SDL::LCD", "draw"
+    $P0    = find_global ("SDL::LCD", "draw")
 
     $P0( screen )
 .end
@@ -254,10 +252,10 @@ It is drawn onto the screen consigned to the constructor.
 .sub __onload :load
     # XXX: an old array will be overwritten when loading this file again
     $P0 = new 'ResizablePMCArray'
-    store_global "SDL::StopWatch::Timer", "array", $P0
+    store_global( "SDL::StopWatch::Timer", "array", $P0)
 
     $P0 = new 'FixedPMCArray'
-    $P1 = find_global "SDL::StopWatch::Timer", "tick"
+    $P1 = find_global( "SDL::StopWatch::Timer", "tick")
     $P0 = 8
     $P0[0] = .PARROT_TIMER_NSEC
     $P0[1] = 0.1
@@ -269,15 +267,15 @@ It is drawn onto the screen consigned to the constructor.
     $P0[7] = 0
 
     $P0 = new 'Timer', $P0
-    store_global "SDL::StopWatch::Timer", "timer", $P0
+    store_global ("SDL::StopWatch::Timer", "timer", $P0)
 .end
 
 .sub tick
     .local pmc timer
     .local pmc array
 
-    timer = find_global "SDL::StopWatch::Timer", "timer"
-    array = find_global "SDL::StopWatch::Timer", "array"
+    timer = find_global ("SDL::StopWatch::Timer", "timer")
+    array = find_global ("SDL::StopWatch::Timer", "array")
 
     $I0 = array
     if $I0 == 0 goto DISABLE
@@ -303,8 +301,8 @@ END:
     .local pmc timer
     .local pmc array
 
-    timer = find_global "SDL::StopWatch::Timer", "timer"
-    array = find_global "SDL::StopWatch::Timer", "array"
+    timer = find_global ("SDL::StopWatch::Timer", "timer")
+    array = find_global ("SDL::StopWatch::Timer", "array")
 
     push array, obj
     timer[.PARROT_TIMER_RUNNING] = 1
@@ -315,8 +313,8 @@ END:
     .local pmc timer
     .local pmc array
 
-    timer = find_global "SDL::StopWatch::Timer", "timer"
-    array = find_global "SDL::StopWatch::Timer", "array"
+    timer = find_global ("SDL::StopWatch::Timer", "timer")
+    array = find_global ("SDL::StopWatch::Timer", "array")
 
     # XXX: stops all watches ATM; just remove the timer from the array
     timer[.PARROT_TIMER_RUNNING] = 0

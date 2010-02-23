@@ -54,7 +54,7 @@ No Configure step, no Makefile generated.
     $P1['SDL/Button.pbc'] = 'SDL/Button.pir'
     $P1['SDL/LCD.pbc'] = 'SDL/LCD.pir'
     $P1['SDL/Sprite.pbc'] = 'SDL/Sprite.pir'
-#    $P1['SDL/StopWatch.pbc'] = 'SDL/StopWatch.pir'
+    $P1['SDL/StopWatch.pbc'] = 'SDL/StopWatch.pir'
 
     $P0['pbc_pir'] = $P1
 
