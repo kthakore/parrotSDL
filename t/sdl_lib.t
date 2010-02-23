@@ -13,7 +13,7 @@ t/sdl_lib.t - test parrot to external SDL connection
 
 =cut
 
-.const int TESTS = 4 
+.const int TESTS = 12 
 
 .sub 'main' :main
     .include 'test_more.pir'
@@ -23,6 +23,9 @@ t/sdl_lib.t - test parrot to external SDL connection
     load_bytecode 'SDL.pbc'
     'ok'(1, 'loaded SDL')
 
+    load_bytecode 'SDL/Constants.pbc'
+    'ok'(1, 'loaded Constants')
+    
     load_bytecode 'SDL/Rect.pbc'
     'ok'(1, 'loaded SDL/Rect')
 
@@ -31,6 +34,31 @@ t/sdl_lib.t - test parrot to external SDL connection
 
     load_bytecode 'SDL/Color.pbc'
     'ok'(1, 'loaded SDL/Color')
+
+    load_bytecode 'SDL/Event.pbc' 
+    'ok'(1, 'loaded SDL/Event')
+
+    load_bytecode 'SDL/EventHandler.pbc' 
+    'ok'(1, 'loaded SDL/EventHandler')
+
+    load_bytecode 'SDL/Image.pbc' 
+    'ok'(1, 'loaded SDL/Image')
+
+    load_bytecode 'SDL/Font.pbc' 
+    'ok'(1, 'loaded SDL/Font')
+
+    load_bytecode 'SDL/App.pbc' 
+    'ok'(1, 'loaded SDL/App')
+
+    load_bytecode 'SDL/Button.pbc' 
+    'ok'(1, 'loaded SDL/Button')
+
+#    load_bytecode 'SDL/LCD.pbc' 
+#    'ok'(1, 'loaded SDL/LCD')
+
+    load_bytecode 'SDL/Sprite.pbc'
+    'ok'(1, 'loaded SDL/Sprite')
+
 
 
 .end

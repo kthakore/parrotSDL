@@ -42,9 +42,20 @@ No Configure step, no Makefile generated.
     # build
     $P1 = new 'Hash'
     $P1['SDL.pbc'] = 'SDL.pir'
+    $P1['SDL/Constants.pbc'] = 'SDL/Constants.pir'
     $P1['SDL/Rect.pbc'] = 'SDL/Rect.pir'
+    $P1['SDL/Event.pbc'] = 'SDL/Event.pir'
+    $P1['SDL/EventHandler.pbc'] = 'SDL/EventHandler.pir'
     $P1['SDL/Surface.pbc'] = 'SDL/Surface.pir'
     $P1['SDL/Color.pbc'] = 'SDL/Color.pir'
+    $P1['SDL/Image.pbc'] = 'SDL/Image.pir'
+    $P1['SDL/Font.pbc'] = 'SDL/Font.pir'
+    $P1['SDL/App.pbc'] ='SDL/App.pir'
+    $P1['SDL/Button.pbc'] = 'SDL/Button.pir'
+    $P1['SDL/LCD.pbc'] = 'SDL/LCD.pir'
+    $P1['SDL/Sprite.pbc'] = 'SDL/Sprite.pir'
+#    $P1['SDL/StopWatch.pbc'] = 'SDL/StopWatch.pir'
+
     $P0['pbc_pir'] = $P1
 
     # test
