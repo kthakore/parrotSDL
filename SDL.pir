@@ -189,6 +189,18 @@ SDL::Image library anyway, which calls this for you.
     .local pmc image_lib
     .local pmc nci_sub
 
+    .local pmc env
+    env = new 'Env'
+    .local string imgpath
+    imgpath = env['SDLIMAGELIBPATH']
+    if imgpath == '' goto default_locations
+    say imgpath
+    loadlib image_lib, imgpath
+    if image_lib goto OK
+    goto failed
+
+default_locations:
+
     loadlib image_lib, 'libSDL_image'
     if image_lib goto OK
 
@@ -202,6 +214,7 @@ SDL::Image library anyway, which calls this for you.
     if image_lib goto OK
 
     # failed to load libSDL
+failed: 
     $P0 = new 'Exception'
     $P0 = "libSDL_image not found!"
     throw $P0
