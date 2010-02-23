@@ -50,7 +50,7 @@ An SDL::LCD object has the following methods:
 
     .local pmc digits
     digits = new 'SDL::Image'
-    digits.'init'( 'runtime/parrot/library/SDL/LCD.png' )
+    digits.'init'( 'SDL/LCD.png' )
     set_global 'digits', digits
 
     newclass class, 'SDL::LCD'
