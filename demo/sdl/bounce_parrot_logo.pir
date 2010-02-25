@@ -39,7 +39,7 @@ Use the Escape key or close the window when you've had enough.
 
     .local pmc image
     image = new 'SDL::Image'
-    image.'init'( 'examples/sdl/parrot_small.png' )
+    image.'init'( 'demos/sdl/parrot_small.png' )
 
     .local pmc sprite
     sprite = new 'SDL::Sprite'

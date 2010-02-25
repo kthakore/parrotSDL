@@ -68,9 +68,17 @@ image.
 
     image = IMG_Load( filename )
 
+    if_null image, error_image
+
     self.'wrap_surface'( image )
 
     .return()
+
+  error_image:
+
+	printerr filename 
+	die ' not found'
+
 .end
 
 =back
