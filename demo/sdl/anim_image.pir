@@ -47,7 +47,7 @@ To run this file, run the following command from the Parrot directory:
 
     .local pmc image
     image    = new 'SDL::Image'
-    image.'init'( 'examples/sdl/parrot_small.png' )
+    image.'init'( 'demo/sdl/parrot_small.png' )
 
     .local pmc sprite
     sprite = new 'SDL::Sprite'
