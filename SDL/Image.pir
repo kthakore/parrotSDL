@@ -76,8 +76,8 @@ image.
 
   error_image:
 
-	printerr filename 
-	die ' not found'
+	$S0 = concat filename , ' not found'
+	die $S0
 
 .end
 
