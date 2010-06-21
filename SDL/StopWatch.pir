@@ -30,7 +30,7 @@ An SDL::StopWatch object has the following methods:
 =over 4
 
 =cut
-
+.loadlib 'math_ops'
 .include "timer.pasm"
 .include "iterator.pasm"
 .namespace ['SDL::StopWatch']

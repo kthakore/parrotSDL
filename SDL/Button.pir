@@ -43,6 +43,8 @@ An SDL::Button object has the following methods:
 
 .namespace ['SDL::Button']
 
+.loadlib 'math_ops'
+
 .sub __onload :load
     .local pmc class
     class = get_class 'SDL::Button'
